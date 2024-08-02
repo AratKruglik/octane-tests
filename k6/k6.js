@@ -14,6 +14,6 @@ export let options = {
 };
 
 export default function () {
-    http.get('http://localhost/up');
+    http.get('http://localhost:8000/up');
     sleep(1);
 }
