@@ -9,7 +9,7 @@ class LoadTestController extends Controller
 {
     public function load()
     {
-        $users = User::limit(100)->get();
+        $users = User::limit(500)->get();
 
         return UserResource::collection($users);
     }
