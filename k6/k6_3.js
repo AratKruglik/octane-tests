@@ -16,7 +16,7 @@ export let options = {
 
 export default function () {
     group('Load Home Page', function () {
-        let res = http.get('http://localhost/');
+        let res = http.get('http://localhost/up');
         check(res, {
             'status is 200': (r) => r.status === 200,
         });
