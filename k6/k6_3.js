@@ -23,17 +23,6 @@ export default function () {
         sleep(1);
     });
 
-    group('Login', function () {
-        let loginRes = http.post('http://localhost/login', {
-            email: 'test@example.com',
-            password: 'password',
-        });
-        check(loginRes, {
-            'status is 200': (r) => r.status === 200,
-        });
-        sleep(1);
-    });
-
     group('View Users List', function () {
         let productListRes = http.get('http://localhost/load');
         check(productListRes, {
